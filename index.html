@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="sw">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MTAPIKA Secondary School</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-grid">
+        <div class="brand">
+          <div class="logo">MS</div>
+          <div>
+            <p class="brand-top">MTAPIKA</p>
+            <p class="brand-bottom">Secondary School</p>
+          </div>
+        </div>
+        <nav class="nav">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+            Menyu
+          </button>
+          <div id="nav-menu" class="nav-menu">
+            <a href="#hero">Mwanzo</a>
+            <a href="#features">Huduma</a>
+            <a href="#results">Matokeo</a>
+            <a href="#attendance">Mahudhurio</a>
+            <a href="#contact">Mawasiliano</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Karibu MTAPIKA Secondary School</p>
+            <h1>
+              Mfumo wa kidigitali wa <span>matokeo</span> na <span>mahudhurio</span>
+            </h1>
+            <p class="lead">
+              Mwalimu anatuma matokeo, mwanafunzi anaona papo hapo. Shule inapata
+              ripoti za mahudhurio kwa usahihi wa hali ya juu.
+            </p>
+            <div class="cta-row">
+              <a class="btn primary" href="#results">Angalia Matokeo</a>
+              <a class="btn ghost" href="#attendance">Angalia Mahudhurio</a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <p class="stat-number">12+</p>
+                <p class="stat-label">Miaka ya Ubora</p>
+              </div>
+              <div>
+                <p class="stat-number">650+</p>
+                <p class="stat-label">Wanafunzi</p>
+              </div>
+              <div>
+                <p class="stat-number">55</p>
+                <p class="stat-label">Walimu</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="card-header">
+              <h3>Dashibodi ya Mwalimu</h3>
+              <p>Ingiza matokeo kwa urahisi</p>
+            </div>
+            <form class="card-form" id="results-form">
+              <label>
+                Somo
+                <select id="subject">
+                  <option value="Hisabati">Hisabati</option>
+                  <option value="Kiswahili">Kiswahili</option>
+                  <option value="Kiingereza">Kiingereza</option>
+                  <option value="Biolojia">Biolojia</option>
+                  <option value="Fizikia">Fizikia</option>
+                </select>
+              </label>
+              <label>
+                Jina la Mwanafunzi
+                <input id="student-name" type="text" placeholder="Mf. Asha Ramadhani" />
+              </label>
+              <label>
+                Alama
+                <input id="score" type="number" min="0" max="100" placeholder="0 - 100" />
+              </label>
+              <button class="btn primary" type="submit">Tuma Matokeo</button>
+            </form>
+            <p class="card-note">Matokeo mapya yanaonekana kwenye jedwali la chini.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <div class="section-title">
+            <p class="eyebrow">Huduma Kuu</p>
+            <h2>Uwazi, kasi, na uwajibikaji</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Matokeo kwa wakati</h3>
+              <p>Walimu hutuma matokeo moja kwa moja baada ya uchunguzi.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Mahudhurio ya kidigitali</h3>
+              <p>Ripoti za darasa kwa siku, wiki, na mwezi kwa bonyeza moja.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Ushirikiano wa wazazi</h3>
+              <p>Wazazi hupata taarifa muhimu kwa wakati na kwa uwazi.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="results" class="results">
+        <div class="container">
+          <div class="section-title">
+            <p class="eyebrow">Matokeo ya Wanafunzi</p>
+            <h2>Muhtasari wa matokeo ya hivi karibuni</h2>
+          </div>
+          <div class="table-card">
+            <table>
+              <thead>
+                <tr>
+                  <th>Jina</th>
+                  <th>Somo</th>
+                  <th>Alama</th>
+                  <th>Daraja</th>
+                  <th>Tarehe</th>
+                </tr>
+              </thead>
+              <tbody id="results-body">
+                <tr>
+                  <td>Neema Juma</td>
+                  <td>Hisabati</td>
+                  <td>85</td>
+                  <td>A</td>
+                  <td>Feb 24, 2026</td>
+                </tr>
+                <tr>
+                  <td>Baraka Msuya</td>
+                  <td>Kiswahili</td>
+                  <td>76</td>
+                  <td>B</td>
+                  <td>Feb 23, 2026</td>
+                </tr>
+                <tr>
+                  <td>Asha Ramadhani</td>
+                  <td>Biolojia</td>
+                  <td>92</td>
+                  <td>A</td>
+                  <td>Feb 22, 2026</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="attendance" class="attendance">
+        <div class="container attendance-grid">
+          <div>
+            <div class="section-title">
+              <p class="eyebrow">Mahudhurio</p>
+              <h2>Ripoti ya mahudhurio ya darasa</h2>
+            </div>
+            <p class="lead">
+              Mfumo huhifadhi taarifa za waliohudhuria, waliokosa, na waliochelewa.
+              Ripoti zinaweza kupakuliwa au kuchapishwa.
+            </p>
+            <div class="attendance-badges">
+              <div class="badge">
+                <p class="badge-title">Waliokuwepo Leo</p>
+                <p class="badge-number" id="present-count">0</p>
+              </div>
+              <div class="badge">
+                <p class="badge-title">Waliokosa</p>
+                <p class="badge-number" id="absent-count">0</p>
+              </div>
+              <div class="badge">
+                <p class="badge-title">Waliochelewa</p>
+                <p class="badge-number" id="late-count">0</p>
+              </div>
+            </div>
+          </div>
+          <div class="attendance-panel">
+            <h3>Chagua hali ya mwanafunzi</h3>
+            <form id="attendance-form">
+              <label>
+                Jina la Mwanafunzi
+                <input id="attendance-name" type="text" placeholder="Mf. Musa Kimaro" />
+              </label>
+              <label>
+                Hali
+                <select id="attendance-status">
+                  <option value="present">Amehudhuria</option>
+                  <option value="absent">Hakuhudhuria</option>
+                  <option value="late">Amechelewa</option>
+                </select>
+              </label>
+              <button class="btn primary" type="submit">Hifadhi Mahudhurio</button>
+            </form>
+            <div class="attendance-list" id="attendance-list">
+              <div class="attendance-item present">
+                <span>Upendo Sanga</span>
+                <span>Amehudhuria</span>
+              </div>
+              <div class="attendance-item late">
+                <span>Salum Macha</span>
+                <span>Amechelewa</span>
+              </div>
+              <div class="attendance-item absent">
+                <span>Erick Mlay</span>
+                <span>Hakuhudhuria</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Wasiliana Nasi</p>
+            <h2>Tuandikie ujumbe</h2>
+            <p class="lead">
+              Tuko tayari kushirikiana na wazazi na jamii kwa ujumla.
+            </p>
+            <div class="contact-details">
+              <div>
+                <p class="label">Simu</p>
+                <p>+255 713 000 000</p>
+              </div>
+              <div>
+                <p class="label">Barua pepe</p>
+                <p>info@mtapikasec.sch.tz</p>
+              </div>
+              <div>
+                <p class="label">Mahali</p>
+                <p>Dodoma, Tanzania</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <label>
+              Jina
+              <input type="text" placeholder="Jina lako" />
+            </label>
+            <label>
+              Barua pepe
+              <input type="email" placeholder="barua@mfano.com" />
+            </label>
+            <label>
+              Ujumbe
+              <textarea rows="4" placeholder="Andika ujumbe wako"></textarea>
+            </label>
+            <button class="btn primary" type="submit">Tuma Ujumbe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="brand-top">MTAPIKA</p>
+          <p class="brand-bottom">Secondary School</p>
+          <p class="footer-note">Elimu bora, mwanga wa maisha.</p>
+        </div>
+        <div>
+          <p class="label">Kurasa</p>
+          <a href="#hero">Mwanzo</a>
+          <a href="#results">Matokeo</a>
+          <a href="#attendance">Mahudhurio</a>
+        </div>
+        <div>
+          <p class="label">Saa za Ofisi</p>
+          <p>Jumatatu - Ijumaa: 08:00 - 17:00</p>
+          <p>Jumamosi: 09:00 - 13:00</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
